@@ -16,7 +16,7 @@ const regularUser={
        }
     }
 }
-console.log(regularUser.fullname.userfullname.firstname); 
+//console.log(regularUser.fullname.userfullname.firstname); 
 //optional chaining
 // console.log(regularUser.fullname?.userfullname.firstname); 
 
@@ -27,7 +27,7 @@ const obj4={5:"a",6:"b"}
 //const obj3={obj1,obj2}//{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 //const obj3=Object.assign({},obj1,obj2,obj4)
 const obj3={...obj1,...obj2}
-console.log(obj3);
+//console.log(obj3);
 
 const users=[
     {
@@ -44,8 +44,33 @@ const users=[
 users[1].email
 // console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));//[ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser));//[ '123abc', 'Shivam', false ]
-console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'Shivam' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.keys(tinderUser));//[ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser));//[ '123abc', 'Shivam', false ]
+// console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'Shivam' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//to check if property is their or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//to check if property is their or not
+
+
+//object destructing
+const course = {
+    coursename : "js in Hindi",
+    price:"999",
+    courseInstructor: "shivvam"
+}
+//course.courseInstructor
+
+const{courseInstructor:inst}= course
+console.log(inst);
+//json
+//   {
+//     "name":"shivam",
+//     "coursename":"js",
+//     "price":"free"
+// }
+
+// api 
+
+[
+    {},
+    {},
+]
