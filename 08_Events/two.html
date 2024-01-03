@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Devson </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+//         setTimeout(function(){
+// console.log("Shivam")
+//         },3000);
+
+// // setInterval(function(){
+//     console.log("Shivam")
+// },5000)
+
+const sayHello = function(){
+    console.log("Shivam")
+}
+const changeText=function(){ 
+    document.querySelector('h1').innerHTML="Best Mern Stack Developer"
+}
+ 
+ 
+ const changeMe = setTimeout(changeText,2000);
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log("Stooped"); 
+ })
+ 
+ </script>
+
+</body>
+</html>

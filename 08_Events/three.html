@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Devson and js </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+
+const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+    const intervalId = document.querySelector('#start');
+    const stopInterval=document.querySelector('#stop')
+
+    function start(){
+        intervalID = setInterval(sayDate, 1000,"hii");
+    }
+
+    // Function to stop setInterval call
+    function stop(){
+        clearInterval(intervalID);
+    }
+
+    document.getElementById("start").addEventListener("click", start);
+    document.getElementById("stop").addEventListener("click", stop);
+
+
+
+
+
+   
+
+ </script>
+
+</body>
+</html>
